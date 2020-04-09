@@ -1,0 +1,36 @@
+<div class="container mt-4">
+
+    <div class="pb-2">
+        <div id="error" style="display:none"></div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h4>Profile</h4>
+            <h6 style="color:lightslategray">Enter information to create a profile</h6>
+        </div>
+
+        <form class="container pt-2 pb-2" id="form">
+            <div class="form-row pl-3">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="school">School</label>
+                <select id="school" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>University of Virginia</option>
+                    <option>Virginia Tech</option>
+                    <option>James Madison University</option>
+                </select>
+            </div>
+            <button type="submit" class="bttn">Submit info</button>
+        </form>
+    </div>
+</div>

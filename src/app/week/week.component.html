@@ -1,0 +1,77 @@
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header form-inline">
+            <h4>This Week</h4>
+        </div>
+        <table class="table table-bordered table-responsive-lg">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+
+
+            <tbody id="week-table">
+                <tr>
+                    <td id="data-sun">
+                        <ol id="sun-list"></ol>
+                        <form #sunform>
+                            <input type="text" #inputsun style="width: 75%">
+                            <button type="button" (click)="addItem('sun', inputsun.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-mon">
+                        <ol id="mon-list"></ol>
+                        <form>
+                            <input type="text" #inputmon style="width: 75%">
+                            <button type="button" (click)="addItem('mon', inputmon.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-tue">
+                        <ol id="tue-list"></ol>
+                        <form>
+                            <input type="text" #inputtue style="width: 75%">
+                            <button type="button" (click)="addItem('tue', inputtue.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-wed">
+                        <ol id="wed-list"></ol>
+                        <form>
+                            <input type="text" #inputwed style="width: 75%">
+                            <button type="button" (click)="addItem('wed', inputwed.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-thu">
+                        <ol id="thu-list"></ol>
+                        <form>
+                            <input type="text" #inputthu style="width: 75%">
+                            <button type="button" (click)="addItem('thu', inputthu.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-fri">
+                        <ol id="fri-list"></ol>
+                        <form>
+                            <input type="text" #inputfri style="width: 75%">
+                            <button type="button" (click)="addItem('fri', inputfri.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                    <td id="data-sat">
+                        <ol id="sat-list"></ol>
+                        <form>
+                            <input type="text" #inputsat style="width: 75%">
+                            <button type="button" (click)="addItem('sat', inputsat.value)" class="btn btn-outline-info btn-sm">+</button>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <small style="font-style:italic; color:rgb(43, 161, 165); padding-left:10px">*click "+" to add items for each day</small>
+    </div>
+</div>

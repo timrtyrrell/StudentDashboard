@@ -1,0 +1,30 @@
+
+<div class="container mt-4">
+    <h2>Calendar</h2>
+    <div class="card">
+        <div class="card-header form-inline">
+            <h4 id="month">{{ monthTitle }}</h4>
+            <h4 class="ml-auto" id="year">{{ yearTitle }}</h4>
+        </div>
+        <table class="table table-bordered table-responsive-sm">
+            <thead>
+                <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                </tr>
+            </thead>
+
+            <tbody id="calendar"></tbody>
+        </table>
+
+        <div class="form-inline">
+            <button class="btn btn-outline-dark" (click)="previous()">previous month</button>
+            <button class="btn btn-outline-dark ml-auto" (click)="next()">next month</button>
+        </div>
+    </div>
+</div>

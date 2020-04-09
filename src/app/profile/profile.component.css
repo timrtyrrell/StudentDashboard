@@ -1,0 +1,29 @@
+/* Worked on together by Tim Tyrrel and Sam Yates */
+
+#error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border-radius: 25px;
+    border: 2px solid #D8000C;
+    padding: 15px;
+}
+
+.bttn {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid rgb(77, 119, 15);
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color: rgb(4, 75, 97);
+    text-align:center;
+    transition: all 0.2s;
+}
+
+.bttn:hover {
+    color:#000000;
+    background-color:rgb(151, 189, 196);
+}
+

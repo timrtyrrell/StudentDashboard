@@ -1,0 +1,9 @@
+/* Worked on together by Tim Tyrrel and Sam Yates */
+
+.isCurrent {
+  color: lightgray;
+}
+
+.btn:focus {
+  color: lightblue;
+}
